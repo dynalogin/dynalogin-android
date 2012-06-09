@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:paddingRight="10dip" android:gravity="center">
+	<TextView android:id="@+id/profLabel" android:layout_width="fill_parent"
+		android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+		android:layout_marginLeft="25dip" android:layout_height="wrap_content"
+		android:text="@string/prof_name" />
+	<EditText android:id="@+id/profText" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:maxEms="16"
+		android:minEms="4" android:singleLine="true"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+		android:layout_below="@id/profLabel" android:maxLength="16"
+		android:minWidth="250dip" />
+	<TextView android:id="@+id/secretLabel" android:layout_width="wrap_content"
+		android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+		android:layout_marginLeft="25dip" android:layout_height="wrap_content"
+		android:text="@string/secret_name" android:layout_below="@id/profText" />
+	<EditText android:id="@+id/secretText" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:maxEms="16"
+		android:minEms="4" android:singleLine="true"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+		android:layout_below="@id/secretLabel" android:maxLength="20"
+		android:minWidth="250dip" />
+	<Button android:id="@+id/saveProfileButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/save_profile" android:layout_marginTop="10dip"
+		android:layout_marginBottom="5dip" android:layout_marginLeft="10dip"
+		android:layout_below="@id/secretText" android:drawableTop="@drawable/ic_menu_add" />
+</RelativeLayout>

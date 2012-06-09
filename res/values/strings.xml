@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dynalogin</string>
+    <string name="prof_name">Name:</string>
+    <string name="secret_name">Secret:</string>
+    <string name="save_profile">Save Profile</string>
+<string name="error_title">Error</string>
+<string name="cancel_info">Cancel</string>
+<string name="ok">OK</string>
+<string name="error">Invalid value(s)</string>
+<!-- <string name="profile_setup_express">Express setup</string> -->
+<string name="profile_setup_manual">Manual setup</string>
+<!-- <string name="user_name">Desired username:</string>
+<string name="first_name">First name:</string>
+<string name="request_info">Register</string>
+<string name="last_name">Last name:</string>
+<string name="email_address">Email address:</string>
+<string name="express_instructions">Your username will be part of your OpenID URL.  Please ensure your name is correct and matches your identity document/passport.  A verification email will be sent to you.  You will need to click the link in the email to confirm your email address.</string> -->
+<string name="code_name">Code:</string>
+<string name="get_code">Get code &gt;</string>
+</resources>
