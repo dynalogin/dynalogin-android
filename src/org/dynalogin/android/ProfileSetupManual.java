@@ -107,11 +107,15 @@ public class ProfileSetupManual extends Activity
 
 	private OnClickListener saveProfileListener = new OnClickListener() {
 		
-		protected void showError() {
+		protected void showError(int msgId) {
 			builder.setTitle(getString(R.string.error_title));
-			builder.setMessage(getString(R.string.error));
+			builder.setMessage(getString(msgId));
 			builder.setPositiveButton(getString(R.string.ok), null);
 			builder.show();
+		}
+		
+		protected void showError() {
+			showError(R.string.error);
 		}
 		
 		public void onClick(View v)	{
@@ -120,8 +124,8 @@ public class ProfileSetupManual extends Activity
 			String name = profName.getText().toString();
 			String secret = profSecret.getText().toString();
 			
-			if (name.length() < 4) {
-				showError();
+			if (name == null || name.length() < 1) {
+				showError(R.string.error_name);
 				return;
 			}
 
@@ -132,7 +136,7 @@ public class ProfileSetupManual extends Activity
 				c.moveToFirst();
 				while (c.isAfterLast() == false) {
 					if (c.getString(1).equals(name)	&& editing == false) {
-						showError();
+						showError(R.string.error_name_exists);
 						c.close();
 						profileStore.close();
 						return;

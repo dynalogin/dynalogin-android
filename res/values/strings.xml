@@ -8,6 +8,8 @@
 <string name="cancel_info">Cancel</string>
 <string name="ok">OK</string>
 <string name="error">Invalid value(s)</string>
+<string name="error_name">Invalid name (too short, too long or bad characters)</string>
+<string name="error_name_exists">The profile name is already used for another profile</string>
 <!-- <string name="profile_setup_express">Express setup</string> -->
 <string name="profile_setup_manual">Manual setup</string>
 <!-- <string name="user_name">Desired username:</string>
